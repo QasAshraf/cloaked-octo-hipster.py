@@ -1,5 +1,5 @@
 import sys
-from server import MyServer
+from src.server import MyServer
 
 # Parse the IP address and port you wish to listen on.
 ip = sys.argv[1]
