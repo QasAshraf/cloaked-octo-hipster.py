@@ -7,7 +7,10 @@ If you are ready to get started, why not head over to the [Wiki](https://github.
 
 ### Useful Links
 * [Getting Python up and running](https://github.com/QasAshraf/cloaked-octo-hipster.py/wiki/Setting-up-Python)
-* [Reference Sheet](https://github.com/QasAshraf/cloaked-octo-hipster.py/wiki/Worksheet)
+* [Reference Sheet](https://github.com/QasAshraf/cloaked-octo-hipster.py/wiki/Reference-Sheet)
+* [Python Tutorial](http://www.codecademy.com/tracks/python)
+* [Python Glossary](http://www.codecademy.com/glossary/python)
+* [GitHub Tutorial](http://try.github.io/levels/1/challenges/1)
 
 ### Tutorial
 1. [Getting the code](https://github.com/QasAshraf/cloaked-octo-hipster.py/wiki/Getting-a-hold-of-the-code)
