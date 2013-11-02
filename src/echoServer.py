@@ -1,4 +1,4 @@
-from src.common.server import Server
+from server import Server
 
 # Create an echo server class
 class EchoServer(Server):

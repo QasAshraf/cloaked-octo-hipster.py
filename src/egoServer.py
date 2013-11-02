@@ -1,4 +1,4 @@
-from src.common.server import Server
+from server import Server
 
 # Create an ego server class
 class EgoServer(Server):

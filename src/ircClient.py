@@ -1,4 +1,4 @@
-from src.common.client import Client
+from client import Client
 
 class IRCClient(Client):
     def onMessage(self, socket, message):

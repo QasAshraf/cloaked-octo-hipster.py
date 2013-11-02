@@ -1,6 +1,6 @@
-from src.common.server import Server
+from server import Server
 
-class MyServer(Server):
+class CustomServer(Server):
     def onStart(self):
         self.clients = 0
         self.names = {}

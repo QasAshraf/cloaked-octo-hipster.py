@@ -1,5 +1,5 @@
 import sys
-from src.server.customServer import MyServer
+from customServer import CustomServer
 
 total = len(sys.argv)
 if total != 3:
@@ -13,7 +13,7 @@ port = int(sys.argv[2])
 
 # TODO: Expose the different types of server, we should be able to choose what type of server we are creating
 # Create an echo server.
-server = MyServer()
+server = CustomServer()
 
 # Start server
 server.start(ip, port)
