@@ -45,9 +45,3 @@ class Client(Receiver):
     def onJoin(self):
         self.stop()
 
-
-class IRCClient(Client):
-    def onMessage(self, socket, message):
-        print message
-        # *** process incoming messages here ***
-        return True

@@ -1,5 +1,5 @@
 import sys
-from server import MyServer
+from src.server.customServer import MyServer
 
 # TODO: Check we only have two arguments
 

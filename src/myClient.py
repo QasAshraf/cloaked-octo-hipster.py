@@ -1,5 +1,6 @@
 import sys
-from client import IRCClient
+
+from ircClient import IRCClient
 
 # TODO: Check we have the right number of arguments
 
