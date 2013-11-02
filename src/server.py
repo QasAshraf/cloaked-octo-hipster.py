@@ -49,8 +49,8 @@ class Server(Receiver):
         serversocket = socketlib.socket(socketlib.AF_INET, socketlib.SOCK_STREAM)
         serversocket.setsockopt(socketlib.SOL_SOCKET, socketlib.SO_REUSEADDR, 1)
         serversocket.bind((ip, int(port)))
-        serversocket.listen(10)
-        serversocket.settimeout(1)
+        serversocket.listen(15)
+        serversocket.settimeout(30)
 
         # On start!
         self.onStart()

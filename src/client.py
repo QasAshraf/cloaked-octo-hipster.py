@@ -10,7 +10,7 @@ class Client(Receiver):
         # Set up server socket
         try:
             self._socket = socketlib.socket(socketlib.AF_INET, socketlib.SOCK_STREAM)
-            self._socket.settimeout(1)
+            self._socket.settimeout(30)
             self._socket.connect((ip, int(port)))
         except socketlib.timeout:
             print("Socket timed out, is the server running?")

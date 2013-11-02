@@ -11,7 +11,6 @@ if total != 3:
 ip = sys.argv[1]
 port = int(sys.argv[2])
 
-
 server = CustomServer()
 #server = echoServer()
 #server = egoServer()
