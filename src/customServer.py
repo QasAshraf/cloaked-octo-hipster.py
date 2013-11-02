@@ -7,6 +7,7 @@ class CustomServer(Server):
         self.sockets = []
         print "My server has started"
 
+    #Whenever a message is sent
     def onMessage(self, socket, message):
         (command, sep, parameter) = message.strip().partition(' ')
         print "Command is " + command
@@ -43,6 +44,7 @@ class CustomServer(Server):
                     i.send(name + " says: " + message)
         return True
 
+    #Whenever a client connects
     def onConnect(self, socket):
         print "Client connected"
         self.clients = self.clients + 1
@@ -52,7 +54,7 @@ class CustomServer(Server):
         socket.send("SETNAME <username> - will change your username")
         socket.send("MESSAGE <username> <message> - will send a message to a specific user")
 
-
+    #Whenever a client disconnects
     def onDisconnect(self, socket):
         print "Client disconnected"
         self.clients = self.clients - 1
@@ -62,5 +64,6 @@ class CustomServer(Server):
                 name = socket.name
                 i.send(name + " has disconnected")
 
+    #When the server is stopped
     def onStop(self):
         print "Server closed"
