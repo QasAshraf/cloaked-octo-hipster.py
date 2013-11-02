@@ -2,7 +2,10 @@ import sys
 
 from ircClient import IRCClient
 
-# TODO: Check we have the right number of arguments
+total = len(sys.argv)
+if total != 4:
+    print ("Usage: python myClient.py <ip> <port> <username>")
+    sys.exit(0)
 
 # Parse the IP address and port you wish to connect to.
 ip = sys.argv[1]
@@ -14,7 +17,6 @@ client = IRCClient()
 
 # Start server
 client.start(ip, port)
-# TODO: Check we connected to a server, what if it's down?
 
 # *** register your client here ***
 client.send('REGESTER %s' % screenName)
