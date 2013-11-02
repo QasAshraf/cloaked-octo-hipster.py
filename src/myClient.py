@@ -19,7 +19,7 @@ client = IRCClient()
 client.start(ip, port)
 
 # *** register your client here ***
-client.send('REGESTER %s' % screenName)
+client.send('REGISTER %s' % screenName)
 
 while client.isRunning():
     try:
