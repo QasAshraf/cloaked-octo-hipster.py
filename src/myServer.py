@@ -1,5 +1,6 @@
 import sys
 from customServer import CustomServer
+from echoServer import EchoServer
 
 total = len(sys.argv)
 if total != 3:
@@ -11,8 +12,8 @@ if total != 3:
 ip = sys.argv[1]
 port = int(sys.argv[2])
 
-server = CustomServer()
-#server = echoServer()
+#server = CustomServer()
+server = EchoServer()
 #server = egoServer()
 
 # Start server

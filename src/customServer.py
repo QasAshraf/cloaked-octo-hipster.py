@@ -66,4 +66,6 @@ class CustomServer(Server):
 
     #When the server is stopped
     def onStop(self):
+        for i in self.sockets:
+            i.send("Server is going down!")
         print "Server closed"
