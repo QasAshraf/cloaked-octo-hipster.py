@@ -1,5 +1,5 @@
 import sys
-from src.client import IRCClient
+from client import IRCClient
 
 # Parse the IP address and port you wish to connect to.
 ip = sys.argv[1]

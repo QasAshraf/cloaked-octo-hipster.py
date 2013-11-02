@@ -40,7 +40,7 @@ implementing some or all of the following five events.
 import socket as socketlib
 import threading
 
-from src.common import Receiver
+from common import Receiver
 
 
 class Server(Receiver):
