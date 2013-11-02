@@ -82,6 +82,7 @@ class Server(Receiver):
         pass
 
 
+# TODO: Move this class out into it's own file
 # Create an echo server class
 class EchoServer(Server):
     def onStart(self):
@@ -101,6 +102,7 @@ class EchoServer(Server):
         return True
 
 
+# TODO: Move this class out into it's own file
 # Create an ego server class
 class EgoServer(Server):
     def onStart(self):
@@ -116,7 +118,7 @@ class EgoServer(Server):
         # Disconnect!
         return False
 
-
+# TODO: Move this server out into it's own file
 class MyServer(Server):
     def onStart(self):
         self.clients = 0
