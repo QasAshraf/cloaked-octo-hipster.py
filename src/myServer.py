@@ -11,9 +11,10 @@ if total != 3:
 ip = sys.argv[1]
 port = int(sys.argv[2])
 
-# TODO: Expose the different types of server, we should be able to choose what type of server we are creating
-# Create an echo server.
+
 server = CustomServer()
+#server = echoServer()
+#server = egoServer()
 
 # Start server
 server.start(ip, port)
