@@ -2,6 +2,11 @@ import sys
 
 from ircClient import IRCClient
 
+total = len(sys.argv)
+if total != 4:
+    print ("Usage: python myClient.py <ip> <port> <username>")
+    sys.exit(0)
+
 # Parse the IP address and port you wish to connect to.
 ip = sys.argv[1]
 port = int(sys.argv[2])

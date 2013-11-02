@@ -1,15 +1,20 @@
 import time
 import socket as socketlib
 import threading
-from src.common import Receiver
+import sys
+from common import Receiver
 
 
 class Client(Receiver):
     def start(self, ip, port):
         # Set up server socket
-        self._socket = socketlib.socket(socketlib.AF_INET, socketlib.SOCK_STREAM)
-        self._socket.settimeout(1)
-        self._socket.connect((ip, int(port)))
+        try:
+            self._socket = socketlib.socket(socketlib.AF_INET, socketlib.SOCK_STREAM)
+            self._socket.settimeout(1)
+            self._socket.connect((ip, int(port)))
+        except socketlib.timeout:
+            print("Socket timed out, is the server running?")
+            sys.exit(0)
 
         # On start!
         self.onStart()
