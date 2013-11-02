@@ -63,6 +63,8 @@ class Server(Receiver):
                 thread = threading.Thread(target=self, args=(socket,))
                 threads.append(thread)
                 thread.start()
+            except (KeyboardInterrupt, SystemExit):
+                self.stop()
             except socketlib.timeout:
                 pass
             except:
