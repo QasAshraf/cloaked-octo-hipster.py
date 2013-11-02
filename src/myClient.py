@@ -31,5 +31,3 @@ while client.isRunning():
         client.stop();
 
 client.stop()
-
-# ßTesting
